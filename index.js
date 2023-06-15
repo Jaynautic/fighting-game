@@ -274,7 +274,9 @@ function animate() {
   }
 }
 
-window.onload = animate;
+window.addEventListener("load", function () {
+  animate();
+});
 
 window.addEventListener("keydown", (event) => {
   if (!player.dead) {
