@@ -1,0 +1,80 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Press Start 2P', cursive;
+        }
+    </style>
+</head>
+
+<body style= "background-color: rgb(22, 22, 22);">
+    <!-- red container div -->
+    <div style="position: relative; display: inline-block">
+
+        <!-- smaller red container div-->
+        <div style="position: absolute;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 20px">
+
+            <!-- player health-->
+            <div style="position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            border-top: 4px solid antiquewhite;
+            border-bottom: 4px solid antiquewhite;
+            border-left: 4px solid antiquewhite;">
+                <div style="background-color: rgb(158, 36, 36); height: 30px; width: 100%">
+                </div>
+                <div id="playerHealth" style="position: absolute;background-color: rgb(95, 50, 110); top: 0; right: 0; bottom: 0; width: 100%">
+                </div>
+            </div>
+
+            <!-- timer -->
+            <div id="timer" style="background-color: rgb(48, 45, 45);
+            width: 75px;
+            height: 75px;
+            flex-shrink: 0;
+            display: flex;
+            border: 8px solid antiquewhite;
+            align-items: center;
+            justify-content: center;
+            color:antiquewhite;
+            font-size: larger;
+            font-weight: bold;">
+            </div>
+
+            <!-- enemy health-->
+            <div style="position: relative;
+            width: 100%;
+            border-top: 4px solid antiquewhite;
+            border-bottom: 4px solid antiquewhite;
+            border-right: 4px solid antiquewhite;">
+                <div style="background-color: rgb(158, 36, 36); height: 30px">
+                </div>
+                <div id="enemyHealth" style="position: absolute;background-color: rgb(95, 50, 110); top: 0; right: 0; left: 0; bottom: 0">
+                </div>
+            </div>
+    </div>
+        <div id="displayText"
+        style="position: absolute;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        top: 0; right: 0; bottom: 0; left: 0;
+        font-size: xx-large;
+        display: none">
+        </div>
+        <canvas></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="index.js"></script>
+</body>
